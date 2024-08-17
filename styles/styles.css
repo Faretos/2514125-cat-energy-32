@@ -82,10 +82,10 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgb(104, 183, 56);
   cursor: pointer;
 }
-.button--transparent-bg {
+.button--transparent-bg, .button--slider {
   background-color: transparent;
 }
 .button--gray {
@@ -141,6 +141,13 @@ img {
   text-transform: uppercase;
 }
 
+.logo:hover, .logo:focus {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
+
 @media (min-width: 768px) {
   .main-nav {
     font-size: 18px;
@@ -174,6 +181,12 @@ img {
 
 .site-list__link {
   color: #000000;
+}
+.site-list__link:hover, .site-list__link:focus {
+  opacity: 0.6;
+}
+.site-list__link:active {
+  opacity: 0.3;
 }
 
 .intro {
@@ -235,10 +248,9 @@ img {
   height: 50px;
   background-image: url("../icons/stack.svg#index_cat-slim-icon-mobile");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position: center;
-  top: 0;
-  left: 0;
+  background-color: rgb(104, 183, 56);
 }
 .catalog-card--pro::before {
   content: "";
@@ -249,8 +261,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  top: 321px;
-  left: 0;
+  background-color: rgb(104, 183, 56);
 }
 
 .catalog-card__title {
@@ -545,10 +556,10 @@ img {
   left: 70px;
 }
 .social-list__link--vk:hover::after, .social-list__link--yt:hover::after, .social-list__link--tg:hover::after, .social-list__link--vk:focus::after, .social-list__link--yt:focus::after, .social-list__link--tg:focus::after {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgb(104, 183, 56);
 }
 .social-list__link--vk:active::after, .social-list__link--yt:active::after, .social-list__link--tg:active::after {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgb(104, 183, 56);
   opacity: 0.3;
 }
 
@@ -564,10 +575,10 @@ img {
   background-color: #666666;
 }
 .copyright:hover::before, .copyright:focus::before {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgb(104, 183, 56);
 }
 .copyright:active::before {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgb(104, 183, 56);
   opacity: 0.3;
 }
 
